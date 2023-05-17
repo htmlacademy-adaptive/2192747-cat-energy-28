@@ -1,0 +1,29 @@
+//Миксин обнуляющий стили списков
+.list-reset() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+//Миксин шрифта с заглавными буквами
+.text-uppercase(@font-size; @line-height; @color) {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: @font-size;
+  line-height: @line-height;
+  color: @color;
+}
+
+//Основной серый шрифт
+.text-base(@font-size; @line-height; @color) {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: @font-size;
+  line-height: @line-height;
+  color: @color;
+}
+
+

@@ -1,0 +1,279 @@
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/source/fonts/oswald/oswaldregular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/source/fonts/oswald/oswaldmedium.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/source/fonts/lato/Lato-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+img {
+  max-width: 100%;
+  height: 100%;
+}
+body {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  background-color: #FFFFFF;
+}
+a {
+  text-decoration: none;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.comparison {
+  background-color: #F2F2F2;
+}
+.comparison__text {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+.intro {
+  background-color: #68B738;
+  background-image: url("../img/promo/green-cat-promo.jpg");
+  background-repeat: no-repeat;
+}
+.intro__text {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 14px;
+  color: #FFFFFF;
+}
+.intro__image {
+  display: block;
+}
+.intro__link {
+  display: block;
+  color: #FFFFFF;
+}
+.program-type {
+  background-color: #F2F2F2;
+}
+.program-type__name {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 37px;
+  color: #000000;
+}
+.program-type__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.program-type__link {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+}
+.work-principle__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.select-program {
+  background-color: #FFFFFF;
+}
+.select-program__description {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+}
+.form {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  color: #222222;
+}
+.form__legend {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  text-transform: none;
+}
+.fields__input::placeholder {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  color: #222222;
+}
+/* .comment {
+
+} */
+.comment__text {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  color: #222222;
+}
+.navigation {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+.navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.navigation__link {
+  color: #000000;
+}
+.button {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+  background-color: #68B738;
+  border: none;
+}
+.button--form {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+.logo {
+  display: block;
+}
+/* .social {
+
+}
+
+.social__list {
+
+}
+
+.social__item {
+
+}
+
+.social__link {
+
+}
+
+.social__link--vkontakte {
+
+}
+
+.visually-hidden {
+
+}
+
+.social__link--youtube {
+
+}
+
+.social__link--telegram {
+
+} */
+.main-header {
+  background-color: #FFFFFF;
+}
+.contacts__text {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+.title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+}
+/* .main-footer {
+
+}
+
+.main-footer__wrapper {
+
+}
+
+.main-footer__logo-img {
+
+}
+.main-footer__social {
+
+}
+
+.main-footer__copyright {
+
+} */
+.main-footer__copyright-link {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #444444;
+}
