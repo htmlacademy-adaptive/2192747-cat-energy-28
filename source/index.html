@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page__body">
@@ -16,16 +17,16 @@
       <button class="navigation__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <div class="navigation-wrapper">
-        <ul class="navigation-list">
-          <li class="navigation-list__item navigation-list__item--active">
-            <a class="navigation-list__link" href="#">Главная</a>
+      <div class="navigation__wrapper">
+        <ul class="navigation__list">
+          <li class="navigation__item navigation__item--active">
+            <a class="navigation__link" href="#">Главная</a>
           </li>
-          <li class="navigation-list__item">
-            <a class="navigation-list__link" href="catalog.html">Каталог продукции</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="navigation-list__item">
-            <a class="navigation-list__link" href="form.html">Подбор программы</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -35,7 +36,7 @@
     <section class="intro">
       <div class="intro__wrapper">
         <h1 class="intro__title title">Функциональное питание для котов</h1>
-        <p class="intro__text caption">Занялся собой? Займись котом!</p>
+        <p class="intro__text">Занялся собой? Займись котом!</p>
         <img class="intro__image" src="img/promo/promo-product.png" alt="Фотография товара">
         <a class="intro__link button" href="form.html">Подобрать программу</a>
       </div>
@@ -45,24 +46,24 @@
         <h2 class="visually-hidden">Подобрать программу питания</h2>
         <ul class="program-type__list">
           <li class="program-type__item">
-            <h3 class="program-type__name caption">похудение</h3>
+            <h3 class="program-type__name">похудение</h3>
             <p class="program-type__description">
               Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim
               поможет вашему питомцу сбросить лишний вес.
             </p>
-            <a class="program-type__link caption" href="catalog.html">каталог slim
+            <a class="program-type__link" href="catalog.html">каталог slim
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="12" fill="currentColor" viewBox="0 0 24 12">
                 <path stroke="#000" stroke-width="2" d="M0 6h18" />
                 <path d="m24 6-6.75 5.196V.804L24 6Z" /></svg>
             </a>
           </li>
           <li class="program-type__item">
-            <h3 class="program-type-name caption">Набор массы</h3>
+            <h3 class="program-type__name">Набор массы</h3>
             <p class="program-type__description">
               Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить
               необходимые мышцы!
             </p>
-            <a class="program-type__link caption" href="catalog.html">каталог pro
+            <a class="program-type__link" href="catalog.html">каталог pro
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="12" fill="currentColor" viewBox="0 0 24 12">
                 <path stroke="#000" stroke-width="2" d="M0 6h18" />
                 <path d="m24 6-6.75 5.196V.804L24 6Z" /></svg>
@@ -109,7 +110,7 @@
           <dt class="comparison__column-name">затрачено времени</dt>
           <dd class="comparison__column-description"><b>60 ДНЕЙ</b></dd>
         </dl>
-        <p class="comparison__text caption">Затраты на питание: 15 000 РУБ. </p>
+        <p class="comparison__text">Затраты на питание: 15 000 РУБ. </p>
         <div class="comparison-image">
           <div class="comparison-image__before-wrapper">
             <img class="comparison-image__before" src="img/before-after/cat-before.png"
@@ -154,8 +155,8 @@
           </li>
         </ul>
       </div>
-      <div class="main-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <div class="main-footer__copyright">
+        <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </div>
   </footer>

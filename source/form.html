@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Подбор программы</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page__body">
@@ -16,16 +17,16 @@
       <button class="navigation__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <div class="navigation-wrapper">
-        <ul class="navigation-list">
-          <li class="navigation-list__item">
-            <a class="navigation-list__link" href="index.html">Главная</a>
+      <div class="navigation__wrapper">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="index.html">Главная</a>
           </li>
-          <li class="navigation-list__item">
-            <a class="navigation-list__link" href="catalog.html">Каталог продукции</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="navigation-list__item navigation-list__item--active">
-            <a class="navigation-list__link" href="#">Подбор программы</a>
+          <li class="navigation__item navigation__item--active">
+            <a class="navigation__link" href="#">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -119,7 +120,7 @@
           </ul>
         </fieldset>
         <div class="form__button-wrapper">
-          <button class="form__button button" type="submit">Отправить заявку</button>
+          <button class="form__button button button--form" type="submit">Отправить заявку</button>
           <p class="form__legend">* — Обязательные поля</p>
         </div>
       </form>
@@ -128,7 +129,7 @@
     <section class="contacts">
       <div class="contacts__wrapper">
         <h2 class="visually-hidden">Контакты</h2>
-        <p class="contacts__text caption">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
         <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         <img class="contacts__map" src="img/map.png" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">
       </div>
@@ -156,8 +157,8 @@
           </li>
         </ul>
       </div>
-      <div class="main-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <div class="main-footer__copyright">
+        <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </div>
   </footer>
