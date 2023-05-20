@@ -1,0 +1,25 @@
+@import '../base/mixins.less';
+@import '../base/variables.less';
+
+.catalog__wrapper {
+  @media (min-width: @tablet-width) {
+    .center(708px);
+  }
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
+}
+
+.catalog__list {
+  .list-reset();
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 324px 324px;
+    grid-template-rows: repeat(4, auto);
+  }
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 245px);
+    grid-template-rows: repeat(2, auto);
+  }
+}

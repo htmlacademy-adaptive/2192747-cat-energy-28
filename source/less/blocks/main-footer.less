@@ -1,6 +1,18 @@
 @import '../base/mixins.less';
 @import '../base/variables.less';
 
+.main-footer__wrapper {
+  @media (min-width: @tablet-width) {
+    .center(707px);
+    display: flex;
+    justify-content: space-between;
+  }
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
+}
+
+
 .main-footer__copyright-link {
   .text-base(16px; 19px; @charcoal);
 }

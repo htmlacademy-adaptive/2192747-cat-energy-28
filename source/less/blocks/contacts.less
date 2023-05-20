@@ -1,23 +1,29 @@
 @import '../base/mixins.less';
 @import '../base/variables.less';
 
-.contacts {
+.contacts__wrapper {
+  width: 320px;
+  @media (min-width: @tablet-width) {
+    .center(707px);
+  }
 
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
 }
 
-.contacts__wrapper {
-
+.contacts__description-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .contacts__text {
   .text-uppercase(16px; 20px; @black);
+  width: 172px;
+  margin: 0;
 }
 
 .contacts__address {
-
-}
-
-.contacts__map {
-
+  width: 160px;
 }
 

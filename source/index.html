@@ -3,34 +3,37 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo logo" href="#">
-      <img class="main-header__logo-icon" src="img/header/header-logo-mobile.svg" width="191" height="38" alt="Логотип магазина функционального
+    <div class="main-header__wrapper">
+      <a class="main-header__logo logo" href="#">
+        <img class="main-header__logo-icon" src="img/header/header-logo-mobile.svg" width="191" height="38" alt="Логотип магазина функционального
         питания для котов «Cat energy».">
-    </a>
-    <nav class="navigation">
-      <button class="navigation__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="navigation__wrapper">
-        <ul class="navigation__list">
-          <li class="navigation__item navigation__item--active">
-            <a class="navigation__link" href="#">Главная</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+      </a>
+      <nav class="navigation">
+        <button class="navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="navigation__wrapper">
+          <ul class="navigation__list">
+            <li class="navigation__item navigation__item--active">
+              <a class="navigation__link" href="#">Главная</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main class="main-container">
     <section class="intro">
@@ -100,35 +103,44 @@
     </section>
     <section class="comparison">
       <div class="comparison__wrapper">
-        <h2 class="comparison__title title">Живой пример</h2>
-        <p class="comparison__table-description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-          Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
-          16 часов в день. </p>
-        <dl class="comparison__table">
-          <dt class="comparison__column-name">снижение веса</dt>
-          <dd class="comparison__column-description"><b>5 КГ</b></dd>
-          <dt class="comparison__column-name">затрачено времени</dt>
-          <dd class="comparison__column-description"><b>60 ДНЕЙ</b></dd>
-        </dl>
-        <p class="comparison__text">Затраты на питание: 15 000 РУБ. </p>
+        <div class="comparison__description-wrapper">
+          <h2 class="comparison__title title">Живой пример</h2>
+          <p class="comparison__table-description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
+            Cat
+            Energy
+            Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит
+            по
+            16 часов в день. </p>
+          <div class="comparison__table-wrapper">
+            <dl class="comparison__table">
+              <dt class="comparison__column-name">снижение веса</dt>
+              <dd class="comparison__column-description"><b>5 КГ</b></dd>
+              <dt class="comparison__column-name">затрачено времени</dt>
+              <dd class="comparison__column-description"><b>60 ДНЕЙ</b></dd>
+            </dl>
+            <p class="comparison__text">Затраты на питание: 15 000 РУБ. </p>
+          </div>
+        </div>
         <div class="comparison-image">
           <div class="comparison-image__before-wrapper">
-            <img class="comparison-image__before" src="img/before-after/cat-before.png"
+            <img class="comparison-image__before" src="img/before-after/cat-before.png" width="280" height="256"
               alt="Котик у которого проблемы с весом.">
           </div>
-          <img class="comparison-image__after" src="img/before-after/cat-after.png"
+          <img class="comparison-image__after" src="img/before-after/cat-after.png" width="280" height="256"
             alt="Кот после прохождения программы питания, успешно похудевший.">
+          <button class="comparison-image__slider" type="button">
+            <span class="visually-hidden">Кнопка для сравнения до после</span>
+          </button>
         </div>
-        <button class="comparison-image__slider" type="button">
-          <span class="visually-hidden">Кнопка для сравнения до после</span>
-        </button>
       </div>
     </section>
     <section class="contacts">
       <div class="contacts__wrapper">
-        <h2 class="visually-hidden">Контакты</h2>
-        <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
-        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <div class="contacts__description-wrapper">
+          <h2 class="visually-hidden">Контакты</h2>
+          <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
+          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        </div>
         <img class="contacts__map" src="img/map.png" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">
       </div>
     </section>

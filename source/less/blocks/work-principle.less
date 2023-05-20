@@ -1,10 +1,27 @@
 @import '../base/mixins.less';
 @import '../base/variables.less';
 
-.work-principle {
-
+.work-principle__wrapper {
+  @media (min-width: @tablet-width) {
+    .center(707px);
+  }
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
 }
 
 .work-principle__list {
   .list-reset();
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 147px 324px;
+    gap: 137px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+  }
 }

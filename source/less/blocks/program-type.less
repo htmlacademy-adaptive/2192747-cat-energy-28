@@ -1,20 +1,31 @@
 @import '../base/mixins.less';
 @import '../base/variables.less';
 
-.program-type {
-  background-color: @white-smoke;
+.program-type__wrapper {
+  @media (min-width: @tablet-width) {
+    .center(708px);
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
+
 }
 
 .program-type__name {
   .text-uppercase(24px; 37px; @black);
-}
-
-.program-type__description {
-
+  margin: 0;
 }
 
 .program-type__list {
   .list-reset();
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
+}
+
+.program-type__item {
+  background-color: @white-smoke;
 }
 
 .program-type__link {

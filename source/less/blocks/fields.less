@@ -1,6 +1,13 @@
 @import '../base/mixins.less';
 @import '../base/variables.less';
 
+.fields__list {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+   }
+}
+
 .fields__input {
   &::placeholder {
     .text-uppercase(16px; 18px; @nero);

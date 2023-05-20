@@ -5,8 +5,22 @@
   background-color: @base-color;
 }
 
-.select-program__title {
+.select-program__wrapper {
+  @media (min-width: @tablet-width) {
+    .center(707px);
+    padding-left: 40px;
+    padding-right: 37px;
+    box-sizing: border-box;
+  }
 
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
+}
+
+
+.select-program__title {
+  margin: 0;
 }
 
 .select-program__description {
