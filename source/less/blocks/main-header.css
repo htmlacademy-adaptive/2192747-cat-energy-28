@@ -1,36 +1,35 @@
-@import '../base/mixins.less';
-@import '../base/variables.less';
-
 .main-header {
-  background-color: @base-color;
-  color: @black;
+  background-color: #FFFFFF;
+  color: #000000;
 }
-
 .main-header__wrapper {
   display: flex;
   flex-direction: column;
-
-  @media (min-width: @tablet-width) {
+}
+@media (min-width: 768px) {
+  .main-header__wrapper {
     flex-direction: row;
     justify-content: space-between;
     width: 708px;
     margin: 0 auto;
   }
-
-  @media (min-width: @desktop-width) {
+}
+@media (min-width: 1200px) {
+  .main-header__wrapper {
     width: 1220px;
   }
 }
-
 .main-header__logo {
   height: 38px;
   padding: 10px 20px 18px;
-
-  @media (min-width: @tablet-width) {
+}
+@media (min-width: 768px) {
+  .main-header__logo {
     height: 52px;
   }
-
-  @media (min-width: @desktop-width) {
+}
+@media (min-width: 1200px) {
+  .main-header__logo {
     height: 59px;
   }
 }
