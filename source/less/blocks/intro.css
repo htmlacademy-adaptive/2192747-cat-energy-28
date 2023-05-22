@@ -1,7 +1,26 @@
 .intro {
-  background-color: #68B738;
   background-image: url("../img/promo/green-cat-promo.jpg");
   background-repeat: no-repeat;
+  position: relative;
+}
+.intro::before {
+  content: '';
+  position: absolute;
+  width: 320px;
+  z-index: 0;
+  opacity: 0.85;
+  background-color: #68B738;
+  top: 0;
+  bottom: 138px;
+}
+.intro__wrapper {
+  box-sizing: border-box;
+}
+.intro__title {
+  padding: 27px 36px;
+  text-align: center;
+  z-index: 3;
+  position: relative;
 }
 .intro__text {
   font-family: "Oswald", sans-serif;
@@ -11,9 +30,15 @@
   font-size: 14px;
   line-height: 14px;
   color: #FFFFFF;
+  text-align: center;
+  z-index: 3;
+  position: relative;
 }
 .intro__image {
   display: block;
+  margin: 29px 20px 0;
+  position: relative;
+  z-index: 3;
 }
 .intro__link {
   display: block;
