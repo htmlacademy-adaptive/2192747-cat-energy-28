@@ -8,8 +8,15 @@
   margin: 0;
 
   &--intro {
-  font-size: 36px;
-  line-height: 36px;
-  color: @base-color;
+    font-size: 36px;
+    line-height: 36px;
+    color: @base-color;
+
+    @media (min-width: @tablet-width) {
+      font-size: 60px;
+      line-height: 60px;
+      color: @black;
+    }
+
   }
 }

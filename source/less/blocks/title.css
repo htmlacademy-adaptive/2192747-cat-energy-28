@@ -9,3 +9,10 @@
   line-height: 36px;
   color: #FFFFFF;
 }
+@media (min-width: 768px) {
+  .title--intro {
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+  }
+}

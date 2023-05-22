@@ -1,9 +1,11 @@
-.intro {
+.intro__wrapper {
   background-image: url("../img/promo/green-cat-promo.jpg");
   background-repeat: no-repeat;
   position: relative;
+  width: 320px;
+  box-sizing: border-box;
 }
-.intro::before {
+.intro__wrapper::before {
   content: '';
   position: absolute;
   width: 320px;
@@ -11,16 +13,30 @@
   opacity: 0.85;
   background-color: #68B738;
   top: 0;
-  bottom: 138px;
+  height: 302px;
 }
-.intro__wrapper {
-  box-sizing: border-box;
+@media (min-width: 768px) {
+  .intro__wrapper::before {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .intro__wrapper {
+    background-image: none;
+    width: 708px;
+    margin: 0 auto;
+  }
 }
 .intro__title {
   padding: 27px 36px;
   text-align: center;
   z-index: 3;
   position: relative;
+}
+@media (min-width: 768px) {
+  .intro__title {
+    text-align: left;
+  }
 }
 .intro__text {
   font-family: "Oswald", sans-serif;
