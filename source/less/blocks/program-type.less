@@ -8,26 +8,119 @@
 
   @media (min-width: @desktop-width) {
     width: 1220px;
+    margin-bottom: 71px;
+  }
+}
+
+.program-type__list {
+  .list-reset();
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
   }
 
+}
+
+.program-type__item {
+  margin: 0 20px 20px;
+  min-width: 280px;
+  background-color: @white-smoke;
+  padding: 30px 33px 18px 20px;
+  box-sizing: border-box;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 24px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: @apple;
+
+    @media (min-width: @tablet-width) {
+      left: auto;
+      top: 92px;
+      right: 62px;
+      width: 200px;
+      height: 200px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 47px;
+      left: 52px;
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+    padding: 77px 0 53px 52px;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 570px;
+    padding: 77px 0 59px 52px;
+    margin-bottom: 0px;
+  }
 }
 
 .program-type__name {
   .text-uppercase(24px; 37px; @black);
   margin: 0;
-}
+  margin-left: 69px;
+  margin-bottom: 29px;
+  position: relative;
 
-.program-type__list {
-  .list-reset();
+  @media (min-width: @tablet-width) {
+    .text-uppercase(36px; 36px; @black);
+    text-align: left;
+    margin-left: 0;
+    margin-bottom: 24px;
+  }
+
   @media (min-width: @desktop-width) {
-    display: flex;
+    margin-left: 162px;
+    margin-bottom: 73px;
   }
 }
 
-.program-type__item {
-  background-color: @white-smoke;
+.program-type__description {
+  margin: 0;
+  padding-bottom: 23px;
+  border-bottom: 1px solid @grey-secondary;
+
+  @media (min-width: @tablet-width) {
+    .text-base(16px; 24px; @black);
+    max-width: 340px;
+    padding-bottom: 0;
+    margin-bottom: 48px;
+    border-bottom: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 451px;
+    margin-bottom: 23px;
+  }
 }
 
 .program-type__link {
   .text-uppercase(16px; 16px; @black);
+  display: block;
+  padding: 4px 0;
+  margin-top: 19px;
+
+  @media (min-width: @tablet-width) {
+    .text-uppercase(20px; 30px; @black);
+    margin-top: 0;
+  }
+}
+
+.program-type__link-icon {
+  margin-left: 15px;
 }

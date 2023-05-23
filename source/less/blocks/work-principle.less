@@ -2,9 +2,12 @@
 @import '../base/variables.less';
 
 .work-principle__wrapper {
+  padding: 0 20px;
+
   @media (min-width: @tablet-width) {
     .center(707px);
   }
+
   @media (min-width: @desktop-width) {
     width: 1220px;
   }
@@ -12,16 +15,83 @@
 
 .work-principle__list {
   .list-reset();
+  margin-left: 80px;
+  margin-bottom: 49px;
 
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-columns: 147px 324px;
-    gap: 137px;
+    grid-template-columns: 247px 324px;
+    column-gap: 179px;
+    row-gap: 94px;
+    margin-left: 0;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;
+    column-gap: normal;
     width: 1220px;
+    margin-left: 0;
+  }
+}
+
+.work-principle__title {
+  margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+  }
+}
+
+.work-principle__item {
+  position: relative;
+  min-height: 54px;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 111px;
+    max-width: 247px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 245px;
+  }
+}
+
+.work-principle--icon-background::before {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: -80px;
+  background-color: @apple;
+
+  @media (min-width: @tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: -31px;
+    left: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    top: 0;
+    left: 0;
+  }
+}
+
+.work-principle-text {
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    .text-base(16px; 24px; @charcoal);
   }
 }
