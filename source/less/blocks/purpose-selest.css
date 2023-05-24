@@ -1,8 +1,0 @@
-.purpose-selest__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.purpose-selest__item:not(last-child) {
-  margin-bottom: 13px;
-}

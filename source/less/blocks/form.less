@@ -1,5 +1,5 @@
-@import '../base/mixins.less';
-@import '../base/variables.less';
+@import "../base/mixins.less";
+@import "../base/variables.less";
 
 .form {
   .text-uppercase(16px; 18px; @nero);
@@ -7,7 +7,7 @@
 
 .form__filds-wrapper {
   @media (min-width: @desktop-width) {
-   display: flex;
+    display: flex;
   }
 }
 
@@ -22,11 +22,6 @@
   .list-reset();
 }
 
-.form__legend {
-  .text-base(14px; 16px; @black );
-  text-transform: none;
-}
-
 .form__button-wrapper {
   @media (min-width: @tablet-width) {
     display: flex;
@@ -35,6 +30,8 @@
 }
 
 .form__legend {
+  .text-base(14px; 16px; @black );
+  text-transform: none;
   margin: 0;
   margin-left: 64px;
   margin-top: 21px;

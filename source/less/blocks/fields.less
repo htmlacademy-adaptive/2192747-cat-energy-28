@@ -1,5 +1,5 @@
-@import '../base/mixins.less';
-@import '../base/variables.less';
+@import "../base/mixins.less";
+@import "../base/variables.less";
 
 .fields__legent {
   font-family: "Oswald", sans-serif;
@@ -14,13 +14,14 @@
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;
-   }
+  }
 }
 
 .fields__item {
   display: flex;
   align-items: center;
-  &:not(last-child) {
+
+  &:not(:last-child) {
     margin-bottom: 14px;
   }
 }
@@ -30,6 +31,7 @@
   padding: 14px 20px 13px;
   border: 1px solid @special-grey;
   flex-grow: 1;
+
   &::placeholder {
     .text-uppercase(16px; 18px; @nero);
   }
