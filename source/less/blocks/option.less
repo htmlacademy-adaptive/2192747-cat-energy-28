@@ -1,8 +1,9 @@
-@import '../base/mixins.less';
-@import '../base/variables.less';
+@import "../base/mixins.less";
+@import "../base/variables.less";
 
 .option__list {
   .list-reset();
+
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 250px 282px;
@@ -11,7 +12,7 @@
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;
-   }
+  }
 }
 
 .option__legend {
