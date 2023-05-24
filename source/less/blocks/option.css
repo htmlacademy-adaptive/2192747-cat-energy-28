@@ -1,0 +1,28 @@
+.option__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+@media (min-width: 768px) {
+  .option__list {
+    display: grid;
+    grid-template-columns: 250px 282px;
+  }
+}
+@media (min-width: 1200px) {
+  .option__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.option__legend {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 26px;
+  text-transform: none;
+  margin-bottom: 34px;
+}
+.option__item:not(:last-child) {
+  margin-bottom: 12px;
+}

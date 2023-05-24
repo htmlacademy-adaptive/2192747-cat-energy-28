@@ -1,0 +1,22 @@
+.comment__legent {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 26px;
+  text-transform: none;
+  margin-bottom: 37px;
+}
+.comment__text {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  color: #222222;
+  width: 100%;
+  height: 150px;
+  padding: 9px 12px 9px 15px;
+  border: 1px solid #E7E7E7;
+  box-sizing: border-box;
+}

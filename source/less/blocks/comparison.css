@@ -1,0 +1,46 @@
+.comparison {
+  background-color: #F2F2F2;
+}
+@media (min-width: 768px) {
+  .comparison__wrapper {
+    margin: 0 auto;
+    width: 707px;
+  }
+}
+@media (min-width: 1200px) {
+  .comparison__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+  }
+}
+@media (min-width: 1200px) {
+  .comparison__description-wrapper {
+    width: 436px;
+  }
+}
+@media (min-width: 768px) {
+  .comparison__table-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1200px) {
+  .comparison__table-wrapper {
+    flex-direction: column;
+  }
+}
+.comparison__text {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+@media (min-width: 1200px) {
+  .comparison__image-before-after {
+    min-width: 560px;
+  }
+}

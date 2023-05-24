@@ -2,22 +2,62 @@
 @import '../base/variables.less';
 
 .contacts {
-
+  background-color: @white-smoke;
 }
 
 .contacts__wrapper {
+  @media (min-width: @tablet-width) {
+    .center(707px);
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
+}
+
+.contacts__description-wrapper {
+  padding: 26px 20px 26px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    margin: 60px 70px 56px;
+  }
 
 }
 
 .contacts__text {
   .text-uppercase(16px; 20px; @black);
+  margin: 0;
+  max-width: 139px;
+
+  @media (min-width: @tablet-width) {
+    .text-uppercase(20px; 26px; @black);
+    max-width: 175px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 163px;
+  }
 }
 
 .contacts__address {
+  line-height: 20px;
+  font-style: normal;
+  max-width: 139px;
 
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 160px;
+    text-align: right;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 160px;
+  }
 }
 
 .contacts__map {
-
+  display: block;
 }
-

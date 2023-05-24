@@ -3,134 +3,138 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Подбор программы</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo logo" href="index.html">
-      <img class="main-header__logo-icon" src="img/header/header-logo-mobile.svg" width="191" height="38" alt="Логотип магазина функционального
+    <div class="main-header__wrapper">
+      <a class="main-header__logo logo" href="index.html">
+        <img class="main-header__logo-icon" src="img/header/header-logo-mobile.svg" width="191" height="38" alt="Логотип магазина функционального
         питания для котов «Cat energy».">
-    </a>
-    <nav class="navigation">
-      <button class="navigation__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="navigation__wrapper">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a class="navigation__link" href="index.html">Главная</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="navigation__item navigation__item--active">
-            <a class="navigation__link" href="#">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+      </a>
+      <nav class="navigation navigation--closed navigation--nojs">
+        <button class="navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="navigation__wrapper">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="index.html">Главная</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="navigation__item navigation__item--active">
+              <a class="navigation__link" href="#">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main class="main-container">
-    <section class="select-program">
+    <section class="select-program select-program--form">
       <div class="select-program__wrapper">
-      <h1 class="select-program__title title">Подбор программы</h1>
-      <p class="select-program__description">
-        Заполните анкету, и мы подберем
-        программу питания для вашего кота
-      </p>
-      <form class="select-program__form form" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="form__fildset fields">
-          <legend class="visually-hidden">Данные кота</legend>
-          <ul class="fields__list">
-            <li class="fields__item">
-              <label class="fields__label"> ИМЯ:*
-                <input class="fields__input" type="text" name="pet-name" value="барсик">
-              </label>
-            </li>
-            <li class="fields__item">
-              <label class="fields__label"> Вес (кг):*
-                <input class="fields__input" type="text" name="pet-weight" value="7">
-              </label>
-            </li>
-            <li class="fields__item">
-              <label class="fields__label"> Возраст (лет):
-                <input class="fields__input" type="text" name="pet-age" value="7">
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="form__fildset purpose-selest">
-          <legend class="visually-hidden">Цель прохождения программы</legend>
-          <ul class="purpose-selest__list">
-            <li class="purpose-selest__item">
-              <input class="purpose-selest__input" type="radio" name="purpose" id="lose-weight" checked>
-              <label class="purpose-selest__label" for="lose-weight">Похудение</label>
-            </li>
-            <li>
-              <input class="purpose-selest__input" type="radio" name="purpose" id="weight-gain">
-              <label class="purpose-selest__label" for="weight-gain">Набор массы</label>
-            </li>
-            <li>
-              <input class="purpose-selest__input" type="radio" name="purpose" id="want-advice">
-              <label class="purpose-selest__label" for="want-advice">Не знаю (Нужен ваш совет)</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="form__fildset fields">
-          <legend class="fields__legent">Контактные данные (владельца кота)</legend>
-          <ul class="fields__list">
-            <li class="fields__item">
-              <label class="fields__label"> E-mail:*
-                <input class="fields__input fields__input--email" type="e-mail" name="e-mail" value="kuklachev@gmail.com">
-              </label>
-            </li>
-            <li class="fields__item">
-              <label class="fields__label"> Телефон:*
-                <input class="fields__input fields__input--telephone" type="telephone" name="telephone" value="8 (960) 900-60-90">
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="form__fildset comment">
-          <textarea class="comment__text" name="comment" id="comment" cols="30" rows="10">
-            Расскажите обо всех повадках кота
+        <h1 class="select-program__title title">Подбор программы</h1>
+        <p class="select-program__description">
+          Заполните анкету, и мы подберем
+          программу питания для вашего кота
+        </p>
+        <form class="select-program__form form" action="https://echo.htmlacademy.ru/" method="get">
+          <div class="form__filds-wrapper">
+            <fieldset class="form__fildset fields">
+              <legend class="visually-hidden">Данные кота</legend>
+              <ul class="fields__list">
+                <li class="fields__item">
+                  <label class="fields__label" for="pet-name"> ИМЯ:*</label>
+                  <input class="fields__input" type="text" name="pet-name" id="pet-name" value="барсик">
+                </li>
+                <li class="fields__item">
+                  <label class="fields__label" for="pet-weight"> Вес (кг):*</label>
+                  <input class="fields__input" type="text" name="pet-weight" id="pet-weight" value="7">
+                </li>
+                <li class="fields__item">
+                  <label class="fields__label" for="pet-age" id="pet-age"> Возраст (лет):</label>
+                  <input class="fields__input" type="text" name="pet-age" value="7">
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form__fildset purpose-selest">
+              <legend class="visually-hidden">Цель прохождения программы</legend>
+              <ul class="purpose-selest__list">
+                <li class="purpose-selest__item">
+                  <input class="purpose-selest__input" type="radio" name="purpose" id="lose-weight" checked>
+                  <label class="purpose-selest__label" for="lose-weight">Похудение</label>
+                </li>
+                <li class="purpose-selest__item">
+                  <input class="purpose-selest__input" type="radio" name="purpose" id="weight-gain">
+                  <label class="purpose-selest__label" for="weight-gain">Набор массы</label>
+                </li>
+                <li class="purpose-selest__item">
+                  <input class="purpose-selest__input" type="radio" name="purpose" id="want-advice">
+                  <label class="purpose-selest__label" for="want-advice">Не знаю (Нужен ваш совет)</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <fieldset class="form__fildset fields">
+            <legend class="fields__legent">Контактные данные (владельца кота)</legend>
+            <ul class="fields__list">
+              <li class="fields__item">
+                <label class="fields__label" for="e-mail"> E-mail:*</label>
+                <input class="fields__input fields__input--email" type="e-mail" name="e-mail" id="e-mail"
+                  value="kuklachev@gmail.com">
+              </li>
+              <li class="fields__item">
+                <label class="fields__label" for="telephone"> Телефон:*</label>
+                <input class="fields__input fields__input--telephone" type="telephone" name="telephone" id="telephone"
+                  value="8 (960) 900-60-90">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__fildset comment">
+            <legend class="comment__legent">Комментарий</legend>
+            <textarea class="comment__text" name="comment" id="comment" cols="30" rows="10">Расскажите обо всех повадках кота
           </textarea>
-        </fieldset>
-        <fieldset class="form__fildset option">
-          <legend class="option__legend">Дополнительно</legend>
-          <ul class="option__list">
-            <li class="option__item">
-              <input class="option__input" type="checkbox" name="sweetener" id="sweetener" checked>
-              <label class="option__label" for="sweetener">Сахарозаменитель</label>
-            </li>
-            <li class="option__item">
-              <input class="option__input" type="checkbox" name="water" id="water">
-              <label class="option__label" for="water">Питьевая вода</label>
-            </li>
-            <li class="option__item">
-              <input class="option__input" type="checkbox" name="milk" id="milk">
-              <label class="option__label" for="milk">Молоко</label>
-            </li>
-            <li class="option__item">
-              <input class="option__input" type="checkbox" name="vitamins" id="vitamins">
-              <label class="option__label" for="vitamins">Bитамины</label>
-            </li>
-          </ul>
-        </fieldset>
-        <div class="form__button-wrapper">
-          <button class="form__button button button--form" type="submit">Отправить заявку</button>
-          <p class="form__legend">* — Обязательные поля</p>
-        </div>
-      </form>
-    </div>
+          </fieldset>
+          <fieldset class="form__fildset option">
+            <legend class="option__legend">Дополнительно</legend>
+            <ul class="option__list">
+              <li class="option__item">
+                <input class="option__input" type="checkbox" name="sweetener" id="sweetener" checked>
+                <label class="option__label" for="sweetener">Сахарозаменитель</label>
+              </li>
+              <li class="option__item">
+                <input class="option__input" type="checkbox" name="water" id="water">
+                <label class="option__label" for="water">Питьевая вода</label>
+              </li>
+              <li class="option__item">
+                <input class="option__input" type="checkbox" name="milk" id="milk">
+                <label class="option__label" for="milk">Молоко</label>
+              </li>
+              <li class="option__item">
+                <input class="option__input" type="checkbox" name="vitamins" id="vitamins">
+                <label class="option__label" for="vitamins">Bитамины</label>
+              </li>
+            </ul>
+          </fieldset>
+          <div class="form__button-wrapper">
+            <button class="form__button button button--form" type="submit">Отправить заявку</button>
+            <p class="form__legend">* — Обязательные поля</p>
+          </div>
+        </form>
+      </div>
     </section>
     <section class="contacts">
       <div class="contacts__wrapper">
-        <h2 class="visually-hidden">Контакты</h2>
-        <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
-        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <div class="contacts__description-wrapper">
+          <h2 class="visually-hidden">Контакты</h2>
+          <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
+          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        </div>
         <img class="contacts__map" src="img/map.png" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">
       </div>
     </section>

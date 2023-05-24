@@ -5,8 +5,27 @@
   .text-uppercase(14px; 18px; @base-color);
   background-color: @apple;
   border: none;
+  box-sizing: border-box;
+  text-align: center;
+
+  &--intro {
+    display: block;
+    padding: 7px 44px;
+    max-width: 280px;
+    margin: 0 auto;
+
+    @media (min-width: @tablet-width) {
+      .text-uppercase(20px; 20px; @base-color);
+      text-align: center;
+      padding: 14px 26px;
+      max-width: 244px;
+    }
+  }
+
   &--form {
     .text-uppercase(16px; 20px; @base-color);
+    width: 280px;
+    padding: 7px 44px;
   }
   &--catalog {
     .text-uppercase(16px; 20px; @base-color);

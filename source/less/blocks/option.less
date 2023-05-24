@@ -1,0 +1,30 @@
+@import '../base/mixins.less';
+@import '../base/variables.less';
+
+.option__list {
+  .list-reset();
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 250px 282px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+   }
+}
+
+.option__legend {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 26px;
+  text-transform: none;
+  margin-bottom: 34px;
+}
+
+.option__item {
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}

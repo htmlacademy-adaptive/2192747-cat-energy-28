@@ -5,5 +5,24 @@
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
-  margin: 0;
+  font-size: 36px;
+  line-height: 40px;
+  color: @black;
+
+  &--intro {
+    font-size: 36px;
+    line-height: 36px;
+    color: @base-color;
+
+    @media (min-width: @tablet-width) {
+      font-size: 60px;
+      line-height: 60px;
+      color: @black;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }

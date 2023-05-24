@@ -1,0 +1,57 @@
+.button {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+  background-color: #68B738;
+  border: none;
+  box-sizing: border-box;
+  text-align: center;
+}
+.button--intro {
+  display: block;
+  padding: 7px 44px;
+  max-width: 280px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .button--intro {
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 14px 26px;
+    max-width: 244px;
+  }
+}
+.button--form {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  width: 280px;
+  padding: 7px 44px;
+}
+.button--catalog {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+.button--more {
+  background-color: #F2F2F2;
+  color: #444444;
+}
