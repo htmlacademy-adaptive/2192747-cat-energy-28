@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Подбор программы</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -15,7 +15,7 @@
         <img class="main-header__logo-icon" src="img/header/header-logo-mobile.svg" width="191" height="38" alt="Логотип магазина функционального
         питания для котов «Cat energy».">
       </a>
-      <nav class="navigation">
+      <nav class="navigation navigation--closed navigation--nojs">
         <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -36,7 +36,7 @@
     </div>
   </header>
   <main class="main-container">
-    <section class="select-program">
+    <section class="select-program select-program--form">
       <div class="select-program__wrapper">
         <h1 class="select-program__title title">Подбор программы</h1>
         <p class="select-program__description">
@@ -49,19 +49,16 @@
               <legend class="visually-hidden">Данные кота</legend>
               <ul class="fields__list">
                 <li class="fields__item">
-                  <label class="fields__label"> ИМЯ:*
-                    <input class="fields__input" type="text" name="pet-name" value="барсик">
-                  </label>
+                  <label class="fields__label" for="pet-name"> ИМЯ:*</label>
+                  <input class="fields__input" type="text" name="pet-name" id="pet-name" value="барсик">
                 </li>
                 <li class="fields__item">
-                  <label class="fields__label"> Вес (кг):*
-                    <input class="fields__input" type="text" name="pet-weight" value="7">
-                  </label>
+                  <label class="fields__label" for="pet-weight"> Вес (кг):*</label>
+                  <input class="fields__input" type="text" name="pet-weight" id="pet-weight" value="7">
                 </li>
                 <li class="fields__item">
-                  <label class="fields__label"> Возраст (лет):
-                    <input class="fields__input" type="text" name="pet-age" value="7">
-                  </label>
+                  <label class="fields__label" for="pet-age" id="pet-age"> Возраст (лет):</label>
+                  <input class="fields__input" type="text" name="pet-age" value="7">
                 </li>
               </ul>
             </fieldset>
@@ -72,11 +69,11 @@
                   <input class="purpose-selest__input" type="radio" name="purpose" id="lose-weight" checked>
                   <label class="purpose-selest__label" for="lose-weight">Похудение</label>
                 </li>
-                <li>
+                <li class="purpose-selest__item">
                   <input class="purpose-selest__input" type="radio" name="purpose" id="weight-gain">
                   <label class="purpose-selest__label" for="weight-gain">Набор массы</label>
                 </li>
-                <li>
+                <li class="purpose-selest__item">
                   <input class="purpose-selest__input" type="radio" name="purpose" id="want-advice">
                   <label class="purpose-selest__label" for="want-advice">Не знаю (Нужен ваш совет)</label>
                 </li>
@@ -87,22 +84,20 @@
             <legend class="fields__legent">Контактные данные (владельца кота)</legend>
             <ul class="fields__list">
               <li class="fields__item">
-                <label class="fields__label"> E-mail:*
-                  <input class="fields__input fields__input--email" type="e-mail" name="e-mail"
-                    value="kuklachev@gmail.com">
-                </label>
+                <label class="fields__label" for="e-mail"> E-mail:*</label>
+                <input class="fields__input fields__input--email" type="e-mail" name="e-mail" id="e-mail"
+                  value="kuklachev@gmail.com">
               </li>
               <li class="fields__item">
-                <label class="fields__label"> Телефон:*
-                  <input class="fields__input fields__input--telephone" type="telephone" name="telephone"
-                    value="8 (960) 900-60-90">
-                </label>
+                <label class="fields__label" for="telephone"> Телефон:*</label>
+                <input class="fields__input fields__input--telephone" type="telephone" name="telephone" id="telephone"
+                  value="8 (960) 900-60-90">
               </li>
             </ul>
           </fieldset>
           <fieldset class="form__fildset comment">
-            <textarea class="comment__text" name="comment" id="comment" cols="30" rows="10">
-            Расскажите обо всех повадках кота
+            <legend class="comment__legent">Комментарий</legend>
+            <textarea class="comment__text" name="comment" id="comment" cols="30" rows="10">Расскажите обо всех повадках кота
           </textarea>
           </fieldset>
           <fieldset class="form__fildset option">

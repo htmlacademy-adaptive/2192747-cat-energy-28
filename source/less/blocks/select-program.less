@@ -3,9 +3,13 @@
 
 .select-program {
   background-color: @base-color;
+  &--form {
+    border-top: 1px solid @grey-secondary;
+  }
 }
 
 .select-program__wrapper {
+  padding: 27px 20px 32px;
   @media (min-width: @tablet-width) {
     .center(707px);
     padding-left: 40px;
@@ -18,11 +22,13 @@
   }
 }
 
-
 .select-program__title {
   margin: 0;
+  margin-bottom: 37px;
 }
 
 .select-program__description {
   .text-uppercase(14px; 18px; @black);
+  margin: 0;
+  margin-bottom: 39px;
 }
