@@ -36,12 +36,21 @@
     </div>
   </header>
   <main class="main-container">
-    <section class="intro">
+    <section class="intro main-container__inro-position">
       <div class="intro__wrapper">
-        <h1 class="intro__title title title--intro"> Функциональное питание для котов</h1>
-        <p class="intro__text">Занялся собой? Займись котом!</p>
+        <div class="intro__text-wrapper">
+          <h1 class="intro__title title title--intro"> Функциональное питание для котов</h1>
+          <p class="intro__text">Занялся собой? Займись котом!</p>
+        </div>
         <div class="intro__image-link-wrapper">
-          <img class="intro__image" src="img/promo/promo-product.png" alt="Фотография товара">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/promo/promo-product-desktop.png 1x, img/promo/promo-product-desktop2x.png 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/promo/promo-product-tablet.png 1x, img/promo/promo-product-tablet@2x.png 2x">
+            <img class="intro__image" src="img/promo/promo-product-mobile.png"
+              srcset="img/promo/promo-product-mobile@2x.png" width="280" height="270" alt="Фотография товара">
+          </picture>
           <a class="intro__link button button--intro" href="form.html">Подобрать программу</a>
         </div>
       </div>
@@ -94,8 +103,7 @@
               содержит только полезные
               питательные вещества.</p>
           </li>
-          <li
-            class="work-principle__item work-principle--icon-background work-principle__item--cooking-method-icon">
+          <li class="work-principle__item work-principle--icon-background work-principle__item--cooking-method-icon">
             <p class="work-principle-text">Выпускается в виде порошка,
               который нужно лишь залить
               кипятком и готово.</p>
@@ -133,11 +141,23 @@
         </div>
         <div class="comparison-image">
           <div class="comparison-image__before-wrapper">
-            <img class="comparison-image__before" src="img/before-after/cat-before.png" width="280" height="256"
-              alt="Котик у которого проблемы с весом.">
+            <picture>
+              <source media="(min-width: 768px)"
+                srcset="img/before-after/cat-before-tablet.png 1x, img/before-after/cat-before-tablet@2x.png 2x">
+              <img class="comparison-image__before" src="img/before-after/cat-before-mobile.png"
+                srcset="img/before-after/cat-before-mobile@2x.png" width="280" height="256"
+                alt="Котик у которого проблемы с весом.">
+            </picture>
           </div>
-          <img class="comparison-image__after" src="img/before-after/cat-after.png" width="280" height="256"
-            alt="Кот после прохождения программы питания, успешно похудевший.">
+          <div class="comparison-image__after-wrapper">
+            <picture>
+              <source media="(min-width: 768px)"
+                srcset="img/before-after/cat-after-tablet.png 1x, img/before-after/cat-after-tablet@2x.png 2x">
+              <img class="comparison-image__after" src="img/before-after/cat-after-mobile.png"
+                srcset="img/before-after/cat-after-mobile@2x.png" width="280" height="256"
+                alt="Кот после прохождения программы питания, успешно похудевший.">
+            </picture>
+          </div>
           <button class="comparison-image__slider" type="button">
             <span class="visually-hidden">Кнопка для сравнения до после</span>
           </button>

@@ -1,0 +1,29 @@
+.comparison-image {
+  position: relative;
+  display: inline-block;
+  width: 280px;
+  height: 256px;
+  overflow: hidden;
+}
+.comparison-image__before-wrapper {
+  position: absolute;
+  width: 50%;
+  overflow: hidden;
+  z-index: 2;
+}
+.comparison-image__before {
+  display: block;
+  min-width: 280px;
+  height: 256px;
+}
+.comparison-image__after {
+  position: absolute;
+  display: block;
+  min-width: 280px;
+  height: 256px;
+}
+.comparison-image__after-wrapper {
+  position: absolute;
+  width: 50%;
+  z-index: 0;
+}
