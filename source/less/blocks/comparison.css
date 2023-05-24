@@ -39,7 +39,8 @@
   line-height: 20px;
   color: #000000;
 }
-/* .comparison-image__after {
-  height: 256px;
+@media (min-width: 1200px) {
+  .comparison__image-before-after {
+    min-width: 560px;
+  }
 }
- */
